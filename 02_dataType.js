@@ -9,7 +9,8 @@ let isThere = true //boolean
 // string => 2 to power 53
 // bigint
 // Boolean => true/false
-// null => represents nothing, like void in C
+// null => represents nothing, like void in C /null is also a object
 // undefined => variable has been declared but no value assigned yet
-// object => collection of properties
+// object => collection of properties 
+// Symbol => for unique
 console.log(typeof isThere)
