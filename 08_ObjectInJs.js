@@ -18,3 +18,6 @@ myObj.greeting = function(){
   console.log(`${myObj.name} khan sanga e`)
 }
 console.log(myObj.greeting())
+
+let MyObJJ = Object("myObj")
+    

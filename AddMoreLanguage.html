@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add More Language</title>
+</head>
+<body style="background-color: black;color: rgb(235, 229, 229);">
+    <div>
+    <ul class="Language">
+        <li>JavaScript</li>
+
+    </ul>
+    
+</div>
+</body>
+<script>
+    function addLang(langname){
+        const li = document.createElement('li')
+        li.innerHTML= `${langname}`
+       let Consp= document.querySelector('.Language').appendChild(li)
+    //    console.log(Consp)
+    }
+    addLang('C++')
+    addLang('python')
+    addLang('Roby')
+
+e
+    const li = document.querySelector("li:nth-child(2)")
+    console.log(li)
+    const newli = document.createElement('li')
+    newli.textContent = 'Mojo'
+
+  li.replaceWith(newli)
+
+    const replace = document.querySelector("li:nth-child(1)")
+        
+    replace.outerHTML= ' <li>TypeScript</li>'
+    let remove = document.querySelector('li:last-child')
+    remove.remove()
+    </script>
+</html>
