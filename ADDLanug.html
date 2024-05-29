@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .langName{
+        color: red;
+        
+    }
+</style>
+<body>
+    <div>
+        <ul class="langName">
+            <li>javaScript</li>
+        </ul>
+       
+    </div>
+</body>
+<script>
+  function AddLanguage(languages){
+    let li = document.createElement('li')
+    li.appendChild(document.createTextNode(languages))
+    document.querySelector('.langName').appendChild(li)
+  }
+  AddLanguage('java')
+  AddLanguage('dare')
+
+  function EditLanguage(langg){
+    let li = document.querySelector('li:nth-child(1)')
+    console.log( li)
+    let newli  = document.createElement('li')
+    newli.appendChild(document.createTextNode(langg))
+    li.replaceWith(newli)
+
+
+  }
+EditLanguage('jango')
+
+let li = document.querySelector("li:first-child")
+console.log( li)
+li.remove()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // function addLanguage(langu){
+    //     const li = document.createElement('li');
+    //     li.innerHTML = `${langu}`;
+    //     document.querySelector('.langName').appendChild(li)
+
+    // }
+    // addLanguage("python")
+
+    // function ADDLanguage(Language){
+    //     const li = document.createElement('li')
+    //     li.appendChild(document.createTextNode(Language))
+    //     document.querySelector('.langName').appendChild(li)
+    // }
+    // ADDLanguage("C++")
+
+    // // Edit
+    // function EditLanguage(NewLanguge){
+    //     const li = document.querySelector("li:nth-child(2)")
+    //    const newli = document.createElement('li')
+    //    newli.appendChild(document.createTextNode(NewLanguge))
+    //    li.replaceWith(newli)
+
+    // }
+    // EditLanguage('sameer')
+
+    // const firstLang = document.querySelector("li:first-child")
+    
+    // firstLang.outerHTML = '<li>khan</li>'
+
+    // const  lastChild =document.querySelector('li:last-child')
+    // lastChild.remove()
+
+</script>
+</html>

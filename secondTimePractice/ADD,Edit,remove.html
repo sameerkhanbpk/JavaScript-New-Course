@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="languagge">
+        <li>javaScript</li>
+    </div>
+</body>
+<script>
+    function addLanguage(language){
+        let li = document.createElement('li')
+    li.appendChild(document.createTextNode(language))
+    document.querySelector('.languagge').appendChild(li)
+    }
+    addLanguage('python')
+function edit(Editlang){
+let li =document.querySelector('li:nth-child(1)')
+console.log(li)
+const Newli = document.createElement('li')
+Newli.appendChild(document.createTextNode(Editlang))
+li.parentNode.replaceChild(Newli,li)
+
+
+
+}
+edit('flitter')
+
+let li = document.querySelector('li:last-child')
+console.log(li)
+li.remove()
+</script>
+</html>

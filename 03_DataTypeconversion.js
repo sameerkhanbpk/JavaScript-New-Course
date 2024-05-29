@@ -95,5 +95,5 @@ let str = 'The quickbrownfoxjumpsoverthe lazy dog.';
 // const char = str.split(' ')
 // console.log(char[5]);
 
-let str2 = str.replace( 'quick','khan321');
+let str2 = str.replace(str, 'sameer')
 console.log(str2);
