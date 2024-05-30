@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async project</title>
+    
+</head>
+<body>
+    <h2>chai aur code project</h2>
+    <button id="Stop">stop</button>
+</body>
+<script>
+
+ let newText= function(){
+    document.querySelector('h2').innerHTML="khan is back"
+  }
+   const  stopnumber  = setTimeout(newText,3000)
+
+   document.querySelector('#Stop').addEventListener('click',function(){
+    clearTimeout(stopnumber)
+    console.log('stopped')
+   })
+</script>
+</html>

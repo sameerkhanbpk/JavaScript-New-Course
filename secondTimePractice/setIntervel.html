@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInteral in javaScript</title>
+</head>
+<body>
+    <h1>chai Aur Code </h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    
+</body>
+<script>
+  
+  let SETINTREVAL 
+ let newTime = document.querySelector('#start').addEventListener('click',function(){
+         SETINTREVAL = setInterval(function(hello) {
+        console.log(hello, Date.now())
+    }, 1000,' hello');
+    
+    })
+  
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearInterval(SETINTREVAL)
+    })
+</script>
+</html>

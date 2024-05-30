@@ -19,14 +19,31 @@
    </div>
 </body>
 <script>
-    document.getElementById('images').addEventListener('click',function(){
-        alert("images")
+    // document.getElementById('images').addEventListener('click',function(){
+    //     console.log("Click on Ul")
 
-    },true)
-    document.getElementById('owl').addEventListener('click',function(){
-        alert("owl")
+    // },false)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl")
+    //     e.stopPropagation();
 
-    },true)
-    
+    // },false)
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //    console.log(e.target.parentNode)
+    // })
+    document.getElementById('google').addEventListener('click',function(e){
+   e.preventDefault();
+e.stopPropagation();
+    })
+    let li = document.getElementById('images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+       if (e.target.tagName === 'IMG'){
+        let removeit = e.target.parentNode
+removeit.remove()
+       }
+        
+    })
+   
 </script>
 </html>
